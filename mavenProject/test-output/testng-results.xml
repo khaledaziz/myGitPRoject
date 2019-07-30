@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10870" started-at="2019-07-30T22:31:53Z" finished-at="2019-07-30T22:32:04Z">
+  <suite name="Default suite" duration-ms="246" started-at="2019-07-30T23:24:11Z" finished-at="2019-07-30T23:24:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10870" started-at="2019-07-30T22:31:53Z" finished-at="2019-07-30T22:32:04Z">
-      <class name="com.Fly365.testing.RoundTripSearch">
-        <test-method status="PASS" signature="intialization()[pri:0, instance:com.Fly365.testing.RoundTripSearch@6adca536]" name="intialization" is-config="true" duration-ms="11642" started-at="2019-07-31T00:31:41Z" finished-at="2019-07-31T00:31:53Z">
+    <test name="Default test" duration-ms="246" started-at="2019-07-30T23:24:11Z" finished-at="2019-07-30T23:24:11Z">
+      <class name="com.Fly365.testing.ContactUsTest">
+        <test-method status="PASS" signature="intialization()[pri:0, instance:com.Fly365.testing.ContactUsTest@6adca536]" name="intialization" is-config="true" duration-ms="8128" started-at="2019-07-31T01:24:03Z" finished-at="2019-07-31T01:24:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialization -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.Fly365.testing.RoundTripSearch@6adca536]" name="setup" is-config="true" duration-ms="20" started-at="2019-07-31T00:31:53Z" finished-at="2019-07-31T00:31:53Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.Fly365.testing.ContactUsTest@6adca536]" name="setup" is-config="true" duration-ms="234" started-at="2019-07-31T01:24:11Z" finished-at="2019-07-31T01:24:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="roundSearch()[pri:0, instance:com.Fly365.testing.RoundTripSearch@6adca536]" name="roundSearch" duration-ms="10839" started-at="2019-07-31T00:31:53Z" finished-at="2019-07-31T00:32:04Z">
+        <test-method status="PASS" signature="dsds()[pri:0, instance:com.Fly365.testing.ContactUsTest@6adca536]" name="dsds" duration-ms="4" started-at="2019-07-31T01:24:11Z" finished-at="2019-07-31T01:24:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- roundSearch -->
-      </class> <!-- com.Fly365.testing.RoundTripSearch -->
+        </test-method> <!-- dsds -->
+      </class> <!-- com.Fly365.testing.ContactUsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
