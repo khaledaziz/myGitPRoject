@@ -26,7 +26,7 @@ public class ContactUsPage {
         //This initElements method will create all WebElements
 
         PageFactory.initElements(driver, this);
-        contactButton.sendKeys("gggg");
+        
 
     }
 }
