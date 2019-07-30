@@ -1,4 +1,4 @@
-package tests;
+package com.Fly365.testing;
 
 import org.testng.annotations.Test;
 

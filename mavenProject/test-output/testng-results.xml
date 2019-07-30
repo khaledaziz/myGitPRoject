@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="45639" started-at="2019-07-27T19:54:46Z" finished-at="2019-07-27T19:55:32Z">
+  <suite name="Default suite" duration-ms="10870" started-at="2019-07-30T22:31:53Z" finished-at="2019-07-30T22:32:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="45639" started-at="2019-07-27T19:54:46Z" finished-at="2019-07-27T19:55:32Z">
-      <class name="tests.NewTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.NewTest@721e0f4f]" name="beforeClass" is-config="true" duration-ms="5888" started-at="2019-07-27T21:54:46Z" finished-at="2019-07-27T21:54:52Z">
+    <test name="Default test" duration-ms="10870" started-at="2019-07-30T22:31:53Z" finished-at="2019-07-30T22:32:04Z">
+      <class name="com.Fly365.testing.RoundTripSearch">
+        <test-method status="PASS" signature="intialization()[pri:0, instance:com.Fly365.testing.RoundTripSearch@6adca536]" name="intialization" is-config="true" duration-ms="11642" started-at="2019-07-31T00:31:41Z" finished-at="2019-07-31T00:31:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="openMyBlog()[pri:0, instance:tests.NewTest@721e0f4f]" name="openMyBlog" duration-ms="39068" started-at="2019-07-27T21:54:52Z" finished-at="2019-07-27T21:55:31Z">
+        </test-method> <!-- intialization -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.Fly365.testing.RoundTripSearch@6adca536]" name="setup" is-config="true" duration-ms="20" started-at="2019-07-31T00:31:53Z" finished-at="2019-07-31T00:31:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openMyBlog -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.NewTest@721e0f4f]" name="afterClass" is-config="true" duration-ms="676" started-at="2019-07-27T21:55:31Z" finished-at="2019-07-27T21:55:32Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="roundSearch()[pri:0, instance:com.Fly365.testing.RoundTripSearch@6adca536]" name="roundSearch" duration-ms="10839" started-at="2019-07-31T00:31:53Z" finished-at="2019-07-31T00:32:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- tests.NewTest -->
+        </test-method> <!-- roundSearch -->
+      </class> <!-- com.Fly365.testing.RoundTripSearch -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

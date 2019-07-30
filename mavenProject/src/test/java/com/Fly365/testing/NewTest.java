@@ -1,4 +1,4 @@
-package tests;
+package com.Fly365.testing;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
