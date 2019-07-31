@@ -7,6 +7,7 @@ import java.io.IOException;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -15,7 +16,10 @@ public class ExcelRead {
 		File excel = new File(filePath);
 		FileInputStream fileSt = new FileInputStream(excel);
 		XSSFWorkbook wb = new XSSFWorkbook(fileSt);
-		XSSFSheet gotSheet = wb.getSheet(sheetName);
+		 //org.apache.poi.ss.usermodel.Workbook wb = WorkbookFactory.create(fileSt);
+		 //org.apache.poi.ss.usermodel.Sheet gotSheet = wb.getSheetAt(0);
+
+		 XSSFSheet gotSheet = wb.getSheet(sheetName);
 		int rowNum = gotSheet.getLastRowNum() ;
 		int colNum = gotSheet.getRow(0).getLastCellNum();
 		System.out.println("rowNum : "+rowNum);

@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" >
-<listeners>
-
-<listener class-name="org.uncommons.reportng.HTMLReporter" />
-
-<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
-
-</listeners>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test">
     <classes>
       <class name="com.Fly365.testing.ContactUsTest"/>
       <class name="com.Fly365.testing.SignUp"/>
       <class name="com.Fly365.testing.RoundTripSearch"/>
     </classes>
-    
   </test> <!-- Test -->
-</suite> <!-- Suite -->
+</suite> <!-- Failed suite [Suite] -->

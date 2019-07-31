@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="30.564">
+  <properties />
+  
+  
+            <testcase name="roundSearch" time="15.909" classname="com.Fly365.testing.RoundTripSearch" />
+                <testcase name="roundSearch" time="14.655" classname="com.Fly365.testing.RoundTripSearch" />
+      
+</testsuite>

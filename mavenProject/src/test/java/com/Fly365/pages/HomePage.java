@@ -32,7 +32,7 @@ public class HomePage {
     @FindBy(how = How.CSS ,using ="a[href='/en/register']")
     public WebElement signUpButton;
     
-    @FindBy(xpath="(//div[@class='result-group__head'])[1]")
+    @FindBy(xpath="//span[text()='FLY365 MIX AND MATCH FLIGHT OPTIONS']")
     public WebElement resultHeader;
     
    

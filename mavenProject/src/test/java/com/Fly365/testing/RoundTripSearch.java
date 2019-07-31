@@ -57,13 +57,10 @@ public class RoundTripSearch extends TestBase{
 		
 		WebDriverWait wait = new WebDriverWait(driver, 30,250);
 		
-		wait.until(
-				ExpectedConditions.textToBePresentInElementValue(RoundTripSearch.resultHeader, "FLY365 MIX AND MATCH FLIGHT OPTIONS"));
-		//JavascriptExecutor js = (JavascriptExecutor)driver;
-		//js.executeScript("return document.readyState").toString().equals("complete");
+		wait.until(ExpectedConditions.visibilityOf(RoundTripSearch.resultHeader));
 			
-			String actualPageTitle = driver.getTitle();
-			Assert.assertEquals(actualPageTitle, expectedPageTitle);
+		String actualPageTitle = driver.getTitle();
+		Assert.assertEquals(actualPageTitle, expectedPageTitle);
 		
                   
 				

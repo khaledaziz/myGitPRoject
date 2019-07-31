@@ -9,7 +9,10 @@ import org.testng.annotations.Test;
 
 import com.Fly365.pages.ContactUsPage;
 import com.Fly365.pages.HomePage;
-
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.Fly365.base.TestBase;
 
 public class ContactUsTest extends TestBase{
@@ -32,8 +35,10 @@ public class ContactUsTest extends TestBase{
 	}
 	
 	@Test
-	public void sendMrssage() throws InterruptedException {
+	public void sendMessage() throws InterruptedException {
 		
+		
+
 		ContactUs.contactButton.click();
 		ContactPage.fullName.sendKeys("New Customer");
 		ContactPage.email.sendKeys("customer@fly365.com");
@@ -49,5 +54,7 @@ public class ContactUsTest extends TestBase{
 		String expectedSentText="Your message has been sent successfully";
 		String actualSentText=ContactPage.messageSentText.getText();
 		Assert.assertEquals(expectedSentText,actualSentText);
+		
+
 	}
 }

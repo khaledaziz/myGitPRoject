@@ -37,7 +37,7 @@ public class SignUp extends TestBase{
 		
 		String firstName= "First Name";
 		String familyName= "Family Name";
-		String email= "customer12@fly365.com";
+		String email= "customer16@fly365.com";
 		String password= "12345qwert";
 		
 		SignUp.signUpButton.click();
