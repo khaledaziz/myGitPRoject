@@ -11,13 +11,28 @@ public class ContactUsPage {
 	WebDriver driver;
 
 	@FindBy(how = How.CSS ,using ="input[placeholder='Full name']")
-    public WebElement contactButton;
+    public WebElement fullName;
 	
-    @FindBy(name="origin")
-	public WebElement originField;
+	@FindBy(how = How.CSS ,using ="input[placeholder='example@email.com']")
+    public WebElement email;
+	
+	@FindBy(how = How.CSS ,using ="input[placeholder='Select Category']")
+    public WebElement category;
+	
+	@FindBy(how = How.CSS ,using ="textarea[placeholder='Write your message here …']")
+    public WebElement message;
+	
+	@FindBy(xpath="//span[text()='Booking Enquiry']")
+	public WebElement firstCat;
+	
+	@FindBy(xpath="//button[@type='submit' and text()='SEND']")
+	public WebElement submitButton;
 
-    @FindBy(name="destination")
-    public WebElement destinationField;  
+    @FindBy(css="h3.text-xl.pt-5")
+    public WebElement thanksText;
+    
+    @FindBy(className="pt-3")
+    public WebElement messageSentText;
 	
 	public ContactUsPage(WebDriver driver){
 

@@ -29,7 +29,13 @@ public class HomePage {
     @FindBy(how = How.CSS ,using ="a[href='/en/contact-us']")
     public WebElement contactButton;
     
+    @FindBy(how = How.CSS ,using ="a[href='/en/register']")
+    public WebElement signUpButton;
     
+    @FindBy(xpath="(//div[@class='result-group__head'])[1]")
+    public WebElement resultHeader;
+    
+   
     public HomePage(WebDriver driver){
 
         this.driver = driver;
