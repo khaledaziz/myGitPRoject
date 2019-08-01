@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.Fly365.testing.ContactUsTest"/>
-      <class name="com.Fly365.testing.SignUp"/>
-      <class name="com.Fly365.testing.RoundTripSearch"/>
+      <class name="com.Fly365.testing.ContactUsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="sendMessage"/>
+          <include name="intialization"/>
+        </methods>
+      </class> <!-- com.Fly365.testing.ContactUsTest -->
+      <class name="com.Fly365.testing.RoundTripSearch">
+        <methods>
+          <include name="roundSearch" invocation-numbers="0"/>
+          <include name="intialization"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.Fly365.testing.RoundTripSearch -->
     </classes>
-  </test> <!-- Test -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

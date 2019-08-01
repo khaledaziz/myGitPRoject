@@ -11,7 +11,6 @@ import com.Fly365.pages.ContactUsPage;
 import com.Fly365.pages.HomePage;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.Fly365.base.TestBase;
 
@@ -19,6 +18,8 @@ public class ContactUsTest extends TestBase{
 	
 	HomePage ContactUs;
 	ContactUsPage ContactPage;
+	static ExtentTest test;	
+	static ExtentReports report;
 	
 	@BeforeMethod
 	public void setup() throws IOException
@@ -37,8 +38,16 @@ public class ContactUsTest extends TestBase{
 	@Test
 	public void sendMessage() throws InterruptedException {
 		
+		// start reporters
+	    ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("Contact Us Test Suite Report.html" );
+	      
+	    // create ExtentReports and attach reporter(s)
+	    ExtentReports extent = new ExtentReports();
+	    extent.attachReporter(htmlReporter);
+	      
+	    // creates a toggle for the given test, adds all log events under it    
+	    test = extent.createTest("Test Contact Us Feature", "This test case to validate that user can send a message to Fly365");
 		
-
 		ContactUs.contactButton.click();
 		ContactPage.fullName.sendKeys("New Customer");
 		ContactPage.email.sendKeys("customer@fly365.com");
@@ -49,12 +58,17 @@ public class ContactUsTest extends TestBase{
 		ContactPage.message.sendKeys("Send message to fly365");
 		ContactPage.submitButton.click();
 		String expectedThanksText="Thank you for contacting us";
-		String actualThanksText=ContactPage.thanksText.getText();
-		Assert.assertEquals(expectedThanksText,actualThanksText);
+		String actualThanksText=ContactPage.thanksText.getText();		
 		String expectedSentText="Your message has been sent successfully";
 		String actualSentText=ContactPage.messageSentText.getText();
-		Assert.assertEquals(expectedSentText,actualSentText);
-		
-
+	
+		try {
+			Assert.assertTrue((expectedSentText.equals(actualSentText)) && (expectedThanksText.equals(actualThanksText)));			
+			test.pass("User sent message to fly365 successfully");
+			extent.flush();
+		}catch(Exception e) {
+			test.fail("User can not send a message to Fly365");
+			extent.flush();
+		}
 	}
 }
